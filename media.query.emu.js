@@ -18,8 +18,7 @@ var MediaQuery = {};
                 cls = cls.split(' ');
                 for(var i = 0; i < cls.length; i++) {
                     if(cls[i].match(this.prefix)) {
-                        this.body.className = this.body.className.replace(cls[i], '');
-                        this.body.className = this.body.className.replace('  ', '');
+                        this.body.className = this.body.className.replace(cls[i], '').replace('  ', '');
                     }
                 }
             }
