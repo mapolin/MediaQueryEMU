@@ -51,7 +51,7 @@ var MediaQuery = {};
         },
         Begin: function() {
             // If media queries are supported, bail
-            if( typeof window.matchMedia != 'undefined' || ( document.all && !document.addEventListener ) ) {
+            if( typeof window.matchMedia != 'undefined' ) {
                 return false;
             }
 
