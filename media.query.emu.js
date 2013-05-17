@@ -35,7 +35,7 @@ var MediaQuery = {};
         // Called on Resize event, go through all queries and apply the first match (the order is always ascending)
         ApplyQuery: function() {
             for( var query in this.Queries ) {
-                if( this.win.outerWidth < query ) {
+                if( this.win.innerWidth < query ) {
                     if( typeof this.Queries[query] !== undefined ) {
                         if( this.body.className.indexOf(this.Queries[query]) == -1 ) {
                             this.RemoveQuery();
